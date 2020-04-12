@@ -1,4 +1,4 @@
-class X
+# tests
 def attr_accessor(*methods)
   methods.each do |method|
     eval "
@@ -9,5 +9,4 @@ def attr_accessor(*methods)
         @#{method} = v
       end "
   end
-end
 end
