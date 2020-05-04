@@ -1,0 +1,3 @@
+module TestCuru
+end
+
