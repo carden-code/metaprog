@@ -42,7 +42,7 @@ names_piople.each(&:capitalize!)
 names_piople.sort!
 
 if agents == 1
-  puts(names_piople.index(name) + 1) * 20
+  puts (names_piople.index(name) + 1) * 20
 elsif agents == 2 && names_piople.last == name
   puts 60
 elsif agents == 2 && names_piople.last != name && name != names_piople.first && name != names_piople[1]
