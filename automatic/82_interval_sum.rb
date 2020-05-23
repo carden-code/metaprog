@@ -9,4 +9,4 @@ array = interval.to_a
 sum = 1 + number_a + (number_a * 2) + (number_a * 3)
 array.each { |elem|  sum += number_a * elem }
 
-puts "Сумма по формуле (1 + А + А×2 + А×3 + … + А×N) = #{sum}"
+puts "Результат выражения (1 + А + А×2 + А×3 + … + А×N) = #{sum}"
