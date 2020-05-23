@@ -29,9 +29,28 @@
 # Explanation
 # It will take 40 minutes to get your license because you are in
 # the second group of two to be seen by one of the two available agents.
-puts "Введите ваше имя"
+
+puts 'Введите ваше имя'
 name = gets.chomp
-puts "Введите количество свободных агентов. Целое число."
+puts 'Введите количество свободных агентов. Целое число.'
 agents = gets.chomp.to_i
-puts "Введите 4 имени людей которые находятся в очереди (через пробел)."
+puts 'Введите 4 имени людей которые находятся в очереди (через пробел).'
 names_piople = gets.split
+
+names_piople << name
+names_piople.each(&:capitalize!)
+names_piople.sort!
+
+if agents == 1
+  puts(names_piople.index(name) + 1) * 20
+elsif agents == 2 && names_piople.last == name
+  puts 60
+elsif agents == 2 && names_piople.last != name && name != names_piople.first && name != names_piople[1]
+  puts 40
+elsif agents == 3 && (names_piople.index(name) + 1) > 3
+  puts 40
+elsif agents == 4 && names_piople.last == name
+  puts 40
+else
+  puts 20
+end
