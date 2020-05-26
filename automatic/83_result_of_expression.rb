@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 # Дано число А и натуральное число N.
 # Найти результат следующего выражения 1 — А + А×2 — А×3 + … + ((-1)×N)×А×N.
 puts "Введите целое число 'А':"
-number_a = gets.chomp.to_i
+a = gets.chomp.to_i
 puts "Введите целое число 'N':"
-number_n = gets.chomp.to_i
+n = gets.chomp.to_i
