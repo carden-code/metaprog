@@ -6,3 +6,5 @@ puts "Введите целое число 'А':"
 a = gets.chomp.to_i
 puts "Введите целое число 'N':"
 n = gets.chomp.to_i
+product = 1 - a + a * 2 - a * 3 + ((-1) * n) * a * n
+puts product
