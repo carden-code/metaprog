@@ -22,3 +22,17 @@
 #
 # Sample Output:
 # Strong
+
+password = gets.split ''
+numbers = []
+simbols = ['!', '@', '#', '$', '%', '&', '*']
+simbol = []
+
+password.each { |elem| numbers << elem.to_i if elem.to_i != 0 }
+password.each { |elem| simbol << elem if simbols.include? elem }
+
+if password.size >= 7 && numbers.size >= 2 && simbol.size >= 1
+  puts 'Strong'
+else
+  puts 'Weak'
+end
