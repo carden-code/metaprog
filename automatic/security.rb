@@ -1,26 +1,3 @@
-puts 'Enter the string. Sample Input: xxxxxGxx$xxxT'
-floor = gets.chomp.split ''
-money = '$'
-thief = 'T'
-guard = 'G'
-elements = []
-elements << money << thief << guard
-prod = []
-floor.each { |elem| prod << elem if elements.include? elem }
-
-if prod[-1] == thief && prod[-2] == guard
-  puts 'quiet'
-elsif prod[0] == guard
-  puts 'ALARM'
-elsif prod[0] == thief && prod[1] == money
-  puts 'ALARM'
-elsif prod[0] == money && prod[1] == thief
-  puts 'ALARM'
-else
-  puts 'quiet'
-end
-
-
 # You are in charge of security at a casino, and there is a thief who is trying
 # to steal the casino's money!  Look over the security diagrams to make sure that
 # you always have a guard between the thief and the money!
@@ -45,3 +22,25 @@ end
 #
 # Sample Output:
 #  ALARM
+
+puts 'Enter the string. Sample Input: xxxxxGxx$xxxT'
+floor = gets.chomp.split ''
+money = '$'
+thief = 'T'
+guard = 'G'
+elements = []
+elements << money << thief << guard
+prod = []
+floor.each { |elem| prod << elem if elements.include? elem }
+
+if prod[-1] == thief && prod[-2] == guard
+  puts 'quiet'
+elsif prod[0] == guard
+  puts 'ALARM'
+elsif prod[0] == thief && prod[1] == money
+  puts 'ALARM'
+elsif prod[0] == money && prod[1] == thief
+  puts 'ALARM'
+else
+  puts 'quiet'
+end
