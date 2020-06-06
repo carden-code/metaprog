@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Дан целочисленный массив. Определить количество участков,
 # на которых его элементы монотонно возрастают.
 # The program determines the number of sections

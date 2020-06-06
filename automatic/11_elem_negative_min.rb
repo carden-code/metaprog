@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Дан целочисленный массив. Заменить все отрицательные элементы на значение
 # минимального.
 # The program changes all negative elements to a value minimum.

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Дан целочисленный массив. Необходимо вывести вначале его элементы с чётными
 # индексами, а затем — с нечётными.
 # The program first displays its array elements with even indices,

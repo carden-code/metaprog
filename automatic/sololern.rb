@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # You have to get a new driver's license and you show up at the office at the
 # same time as 4 other people. The office says that they will see everyone in
 # alphabetical order and it takes 20 minutes for them to process each new license.

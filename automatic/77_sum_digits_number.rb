@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Дано целое число. Найти сумму его цифр
 puts 'Введите число что бы узнать сумму его чисел'
 number = gets.strip

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Дан целочисленный массив. Проверить, образуют ли элементы арифметическую
 # прогрессию. Если да, то вывести разность прогрессии, если нет — вывести nil.
 # The program checks whether the elements form arithmetic progression.

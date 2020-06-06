@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Дан целочисленный массив. Осуществить циклический сдвиг элементов массива
 # вправо на одну позицию.
 # The program performs a cyclic shift of array elements

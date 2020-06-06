@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Дан целочисленный массив. Преобразовать его, прибавив к чётным числам
 # первый элемент. Первый и последний элементы массива не изменять.
 # The program converts the array by adding the first element to even numbers.

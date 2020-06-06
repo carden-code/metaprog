@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Дан целочисленный массив. Найти максимальный из его локальных максимумов.
 # The program finds the maximum of the local minima of the array.
 arr = [2, -2, 3, 0, 7, 2, 23, -1, 3, 1, 4]
